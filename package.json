@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "tsx server.ts",
     "build": "next build",
-    "start": "NODE_ENV=production tsx server.ts",
+    "start": "npx drizzle-kit push && NODE_ENV=production tsx server.ts",
     "lint": "eslint",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
@@ -27,6 +27,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.45.1",
+    "drizzle-kit": "^0.31.9",
     "lucide-react": "^0.575.0",
     "mermaid": "^11.12.3",
     "nanoid": "^5.1.6",

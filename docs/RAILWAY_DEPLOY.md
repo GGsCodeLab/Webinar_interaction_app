@@ -34,6 +34,7 @@ Set these in the Railway service → **Variables**:
 | `AUTH_SECRET` | Yes | e.g. `openssl rand -base64 32` |
 | `NEXTAUTH_URL` | Yes | Your app URL, e.g. `https://your-app.up.railway.app` |
 | `NEXT_PUBLIC_APP_URL` | Yes | Same as `NEXTAUTH_URL` (used for Socket.IO client and API calls) |
+| `AUTH_TRUST_HOST` | Recommended on Railway | Set to `true` so Auth.js trusts the Railway host (or rely on code `trustHost: true`) |
 | `DATABASE_PATH` | If using volume | e.g. `/data/mypoll.db` (see section 4) |
 | `AUTH_GOOGLE_ID` | If using Google | Google OAuth client ID |
 | `AUTH_GOOGLE_SECRET` | If using Google | Google OAuth client secret |
