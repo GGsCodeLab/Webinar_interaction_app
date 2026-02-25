@@ -12,6 +12,9 @@
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio"
   },
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@tiptap/extension-placeholder": "^3.20.0",
