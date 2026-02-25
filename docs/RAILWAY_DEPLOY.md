@@ -40,6 +40,8 @@ Set these in the Railway service → **Variables**:
 
 **Set automatically by Railway (do not add):** `PORT`, `NODE_ENV`, `RAILWAY_PUBLIC_DOMAIN`.
 
+**If the build uses Node 18 and fails (e.g. `better-sqlite3` or engine errors):** In Railway → your service → **Variables**, add a variable that applies at **build time**: `NIXPACKS_NODE_VERSION` = `22`. The repo already has `.nvmrc` and `engines.node = "22"` so Nixpacks should use Node 22; the env var overrides if needed.
+
 Do **not** commit `.env.local`; configure the variables above only in the Railway dashboard.
 
 ---
