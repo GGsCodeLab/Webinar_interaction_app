@@ -65,7 +65,7 @@ export function StartNowDialog({
     const isViewOnly = hasInitialCounts && !alreadyLive;
     setRemaining(alreadyLive ? (initialRemainingSeconds ?? timerSeconds) : timerSeconds);
     setCounts(hasInitialCounts ? initialCounts.slice(0, options.length) : Array(options.length).fill(0));
-    setEnded(isViewOnly);
+    setEnded(Boolean(isViewOnly));
     setTotalResponses(isViewOnly ? (initialCounts?.reduce((a, b) => a + b, 0) ?? 0) : 0);
 
     const socket = socketRef.current;

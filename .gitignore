@@ -7,3 +7,4 @@ mypoll.db
 mypoll.db-shm
 mypoll.db-wal
 drizzle/
+node_modules

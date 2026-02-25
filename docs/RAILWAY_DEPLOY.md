@@ -34,11 +34,13 @@ Set these in the Railway service → **Variables**:
 | `AUTH_SECRET` | Yes | e.g. `openssl rand -base64 32` |
 | `NEXTAUTH_URL` | Yes | Your app URL, e.g. `https://your-app.up.railway.app` |
 | `NEXT_PUBLIC_APP_URL` | Yes | Same as `NEXTAUTH_URL` (used for Socket.IO client and API calls) |
-| `DATABASE_PATH` | If using volume | e.g. `/data/mypoll.db` (see step 5) |
+| `DATABASE_PATH` | If using volume | e.g. `/data/mypoll.db` (see section 4) |
 | `AUTH_GOOGLE_ID` | If using Google | Google OAuth client ID |
 | `AUTH_GOOGLE_SECRET` | If using Google | Google OAuth client secret |
 
-Do **not** commit `.env.local`; configure these only in Railway.
+**Set automatically by Railway (do not add):** `PORT`, `NODE_ENV`, `RAILWAY_PUBLIC_DOMAIN`.
+
+Do **not** commit `.env.local`; configure the variables above only in the Railway dashboard.
 
 ---
 
