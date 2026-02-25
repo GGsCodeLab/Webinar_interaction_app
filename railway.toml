@@ -1,0 +1,14 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm run build"
+
+[deploy]
+startCommand = "npm run start"
+healthcheckPath = "/"
+healthcheckTimeout = 30
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+# Mount a Railway volume at /data so SQLite persists across deploys
+# In Railway dashboard: Add Volume → Mount path: /data
+# Then set env var: DATABASE_PATH=/data/mypoll.db

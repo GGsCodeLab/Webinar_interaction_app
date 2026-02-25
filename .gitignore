@@ -1,0 +1,9 @@
+node_modules
+.next
+.env.local
+.env*.local
+*.log
+mypoll.db
+mypoll.db-shm
+mypoll.db-wal
+drizzle/
